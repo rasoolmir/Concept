@@ -37,8 +37,7 @@
 }
 
 body {
-    /* font-family:;
-    font-size: 16x; */
+    font-family:'iranian-sans', sans-serif;
     color:var(--Neutral_White);
     direction: rtl;
 }
