@@ -1,0 +1,153 @@
+.banner {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.banner__description {
+  width: 100%;
+  text-align: center;
+  width: 868px;
+  height: 224px;
+}
+
+.banner__description h1 {
+  display: block;
+  color: var(--Primary_shade_7);
+  margin-bottom: 24px;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.banner__description h5 {
+  display: none;
+}
+
+.banner__description p {
+  color: var(--Primary_shade_5);
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+.banner__description--buttons {
+  margin-bottom: 30px;
+}
+
+.banner__description--buttons a:first-child {
+  text-decoration: none;
+  color: var(--Neutral_White);
+  background-color: var(--Primary);
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 0 10px;
+}
+
+.banner__description--buttons a:last-child {
+  text-decoration: none;
+  color: var(--Neutral_black-10);
+  border: 1px solid var(--Neutral_Gray-8);
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 0 10px;
+}
+
+/* banner__image  */
+.banner__image--main {
+  width: 1016px;
+  height: 588px;
+  border-radius: 24px;
+}
+
+.banner__image--top,
+.banner__image--bottom {
+  position: absolute;
+}
+
+.banner__image--top {
+  width: 287px;
+  height: 465px;
+  top: 153px;
+  right: 6px;
+}
+
+.banner__image--bottom {
+  width: 447px;
+  height: 279px;
+  bottom: -100px;
+  left: -9px;
+}
+
+.banner__image--mobile {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .banner {
+    max-width: 329px;
+    height: 420px;
+  }
+
+  .banner__description {
+    width: 100%;
+    height: 136px;
+  }
+
+  .banner__description h1 {
+    display: none;
+  }
+
+  .banner__description h5 {
+    display: block;
+    color: var(--Neutral_black-10);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 140%;
+  }
+
+  .banner__description p {
+    margin: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 180%;
+  }
+
+  .banner__description--buttons {
+    font-size: 14px;
+    line-height: 140%;
+    width: 100%;
+    height: 32px;
+  }
+
+  /* banner__image  */
+
+  .banner__image--main {
+    display: none;
+  }
+
+  .banner__image--top,
+  .banner__image--bottom {
+    display: none;
+  }
+
+  .banner__image--top {
+    display: none;
+  }
+
+  .banner__image--bottom {
+    display: none;
+  }
+
+  .banner__image--mobile {
+    display: block;
+    width: 215px;
+    height: 250px;
+    border-radius: 8px;
+    margin: 37px 0;
+  }
+}
